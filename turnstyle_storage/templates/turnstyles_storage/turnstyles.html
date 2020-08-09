@@ -1,0 +1,9 @@
+{% if turnstyle_list %}
+<ul>
+    {% for t in turnstyle_list %}
+    <li>{{ t.articyl }} {{t.name}} {{t.material }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No turnslyles are available.</p>
+{% endif %}
